@@ -1,0 +1,35 @@
+.noticias {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  margin-left: 0%;
+  margin-top: 15%;
+  font-size: 0.9vw;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+}
+
+#notes {
+  text-align: justify;
+}
+
+#circulo {
+  vertical-align: middle;
+}
+
+.centro {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.centro-vertical {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
