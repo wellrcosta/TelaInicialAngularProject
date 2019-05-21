@@ -6,6 +6,7 @@ import { NAVEGACAOComponent } from './navegacao/navegacao.component';
 import { SLIDERComponent } from './slider/slider.component';
 import { BlocosComponent } from './blocos/blocos.component';
 import { NoticiasComponent } from './noticias/noticias.component';
+import { MomentosComponent } from './momentos/momentos.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { NoticiasComponent } from './noticias/noticias.component';
     NAVEGACAOComponent,
     SLIDERComponent,
     BlocosComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    MomentosComponent
   ],
   imports: [
     BrowserModule

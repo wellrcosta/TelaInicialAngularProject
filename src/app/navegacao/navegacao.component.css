@@ -1,8 +1,8 @@
 #barra-navegacao {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 10%;
-    font-family: arial;
+    font-family: Tahoma, sans-serif;
 }
 
 .navigation-clean-button .navbar-text .action-button, .navigation-clean-button .navbar-text .action-button:active, .navigation-clean-button .navbar-text .action-button:hover {
