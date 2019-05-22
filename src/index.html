@@ -2,22 +2,54 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <title>TESTEE</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>TARGET</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 
 <body style="margin: 0px;">
-  <app-root></app-root>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.carousel').carousel();
-    });
-  </script>
+    <a class="navigation" style="background-color: rgba(0, 0, 0, 0); position: absolute; z-index: 1; left: 6%; top: 2%; ">
+        <img src="assets/img/LogoTarget.svg" style="width: 150px; height: 100px" />
+    </a>
+
+    <div id="btnc" class="fixed-action-btn" style="position: fixed; top: 3%;">
+        <a class="btn-floating btn-large blue darken-3">
+            <i class="material-icons large">dehaze</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red darken-2"><i class="material-icons">accessible_forward</i></a></li>
+            <li><a class="btn-floating red"><i class="material-icons">3d_rotation</i></a></li>
+            <li><a class="btn-floating yellow darken-4"><i class="material-icons">autorenew</i></a></li>
+            <li><a class="btn-floating yellow darken-3"><i class="material-icons">code</i></a></li>
+            <li><a class="btn-floating yellow darken-2"><i class="material-icons">bug_report</i></a></li>
+        </ul>
+    </div>
+    <app-root></app-root>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        });
+    </script>
+    <script>
+        const botao = document.querySelectorAll('.fixed-action-btn');
+        M.FloatingActionButton.init(botao, {
+            direction: 'bottom',
+            hoverEnabled: false
+        })
+        $('.fixed-action-btn').floatingActionButton('open');
+
+        $(window).scroll(function() {
+            $('.fixed-action-btn').floatingActionButton('close');
+        });
+    </script>
 
 </body>
 
