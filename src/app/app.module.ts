@@ -7,6 +7,10 @@ import { SLIDERComponent } from './slider/slider.component';
 import { BlocosComponent } from './blocos/blocos.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { MomentosComponent } from './momentos/momentos.component';
+import { AniversariosComponent } from './aniversarios/aniversarios.component';
+import { MinhaHistoriaComponent } from './minha-historia/minha-historia.component';
+import { NovosColaboradoresComponent } from './novos-colaboradores/novos-colaboradores.component';
+import { SkaInterligadaComponent } from './ska-interligada/ska-interligada.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { MomentosComponent } from './momentos/momentos.component';
     SLIDERComponent,
     BlocosComponent,
     NoticiasComponent,
-    MomentosComponent
+    MomentosComponent,
+    AniversariosComponent,
+    MinhaHistoriaComponent,
+    NovosColaboradoresComponent,
+    SkaInterligadaComponent
   ],
   imports: [
     BrowserModule
