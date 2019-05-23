@@ -18,8 +18,8 @@
         <img src="assets/img/LogoTarget.svg" style="width: 150px; height: 100px" />
     </a>
 
-    <div id="btnc" class="fixed-action-btn" style="position: fixed; top: 3%;">
-        <a class="btn-floating btn-large blue darken-3">
+    <div id="btnc" class="fixed-action-btn " style="position: fixed; top: 3%;">
+        <a class="btn-floating btn-large blue darken-3 tooltipped" data-position="left" data-tooltip="I am a tooltip">
             <i class="material-icons large">dehaze</i>
         </a>
         <ul>
@@ -49,6 +49,14 @@
 
         $(window).scroll(function() {
             $('.fixed-action-btn').floatingActionButton('close');
+        });
+
+        $(document).ready(function() {
+            $('.tooltipped').tooltip();
+        });
+
+        $(window).load(function() {
+            $('.material-tooltip').css('border-radius', '10px');
         });
     </script>
 
