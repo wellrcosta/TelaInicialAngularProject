@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 import { SLIDERComponent } from './slider/slider.component';
 import { BlocosComponent } from './blocos/blocos.component';
 import { NoticiasComponent } from './noticias/noticias.component';
@@ -23,7 +24,8 @@ import { SkaInterligadaComponent } from './ska-interligada/ska-interligada.compo
     SkaInterligadaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

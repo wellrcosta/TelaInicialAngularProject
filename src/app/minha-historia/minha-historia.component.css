@@ -1,6 +1,7 @@
 @font-face{
   font-family: "Segoe-ui-l";
-  src: url(../minha-historia/font/segoeuil.ttf) format("truetype");
+  src: url(../../assets/font/segoeuil.ttf) format("truetype");
+  /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
 }
 
 .centro {
