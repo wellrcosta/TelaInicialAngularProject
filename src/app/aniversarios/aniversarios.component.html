@@ -1,13 +1,43 @@
+<!-------------------------------ANIVERSARIANTES DA SEMANA-------------------------------------------->
+<div class="" id="">
 
+  <div class="row semEspaco " style="height:100%; padding:2%; background-color: #00A4FF">
 
-<table>
+    <div class="col-sm-3" style="height:100%; top: 1px;">
+      <div id="minha-historia-esquerda">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="../../assets/img/IconeAniversariantesDaSemana.svg"/>
+            </div>
+            <div class="col-md-6">
+              <h3 class="centro">Aniversariantes da Semana</h3>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <tr *ngFor="let ani of aniver">
-    <td>{{ani.nm_nome}}</td>
-  </tr>
-</table>
+      <div class="col-md-12">
+        <br>
+        <img src="../../assets/img/Grupo 294.svg" style="width: 130%">
+      </div>
 
+    </div>
+    <!--------------------------------------------------------------------------------------------------------->
+    <div class="col-sm-9" style="height:100%">
+      <div class="row"
+           style="align-items: center; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 
+        <div *ngFor="let ani of aniver" class="col-4" style="text-align: center;">
+          <img class="rounded-circle" style="width:60%;"
+               src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA"/>
+          <h3 style="margin-top: 15px; color: white">{{ani.nm_nome}}</h3>
+          <p>Equipe técnica<br>São Leopoldo<br>{{ani.ds_aniversario}}</p>
+          <br>
+        </div>
 
+      </div>
+    </div>
 
-
+  </div>
+</div>

@@ -2,64 +2,73 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <title>TARGET</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <meta charset="utf-8">
+  <title>TARGET</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
-<body style="margin: 0px; font-family:Segoe-ui-l">
-    <a class="navigation" style="background-color: rgba(0, 0, 0, 0); position: absolute; z-index: 1; left: 6%; top: 2%; ">
-        <img src="assets/img/LogoTarget.svg" style="width: 150px; height: 100px" />
-    </a>
+<body style="margin: 0; font-family:Segoe-ui-l">
+<a class="navigation" style="background-color: rgba(0, 0, 0, 0); position: absolute; z-index: 1; left: 6%; top: 2%; ">
+  <img src="assets/img/LogoTarget.svg" style="width: 150px; height: 100px"/>
+</a>
 
-    <div id="btnc" class="fixed-action-btn " style="position: fixed; top: 3%;">
-        <a class="btn-floating green darken-2 tooltipped" data-position="left" data-tooltip="I am a tooltip"  style="text-align: center">
-          <img src="assets/img/Menu3Pontinhos.svg">
-        </a>
-        <ul>
-            <li><a class="btn-floating green darken-2 tooltipped" data-position="left" data-tooltip="FIRST"><i class="material-icons">accessible_forward</i></a></li>
-            <li><a class="btn-floating green darken-2 tooltipped" data-position="left" data-tooltip="I am a tooltip"><i class="material-icons">3d_rotation</i></a></li>
-            <li><a class="btn-floating green darken-2 tooltipped" data-position="left" data-tooltip="I am a tooltip"><i class="material-icons">autorenew</i></a></li>
-            <li><a class="btn-floating green darken-2 tooltipped" data-position="left" data-tooltip="I am a tooltip"><i class="material-icons">code</i></a></li>
-            <li><a class="btn-floating green darken-2 tooltipped" data-position="left" data-tooltip="I am a tooltip""><i class="material-icons">bug_report</i></a></li>
-        </ul>
-    </div>
+<div id="btnc" class="fixed-action-btn " style="position: fixed; top: 3%;">
+  <a class="btn-floating btn-large tooltipped menu hoverable" data-position="left" data-tooltip="Menu"
+     style="text-align: center; align-items: center;">
+    <img src="assets/img/Menu3Pontinhos.svg">
+  </a>
+  <ul>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="FIRST">
+      <img src="assets/img/Menu%5E.svg">
+    </a></li>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="I am a tooltip">
+      <i class="material-icons">3d_rotation</i></a></li>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="I am a tooltip">
+      <i class="material-icons">autorenew</i></a></li>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="I am a tooltip">
+      <i class="material-icons">code</i></a></li>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="I am a tooltip">
+      <i class="material-icons ">bug_report</i></a></li>
+  </ul>
+</div>
 
-    <app-root></app-root>
+<app-root></app-root>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-    <script>
-        $(document).ready(function() {
-            $('.carousel').carousel();
-        });
-    </script>
-    <script>
-        const botao = document.querySelectorAll('.fixed-action-btn');
-        M.FloatingActionButton.init(botao, {
-            direction: 'bottom',
-            hoverEnabled: false
-        })
-        $('.fixed-action-btn').floatingActionButton('open');
+<script>
+  $(document).ready(function () {
+    $('.carousel').carousel();
+  });
+</script>
+<script>
+  const botao = document.querySelectorAll('.fixed-action-btn');
+  M.FloatingActionButton.init(botao, {
+    direction: 'bottom',
+    hoverEnabled: false
+  })
+  $('.fixed-action-btn').floatingActionButton('open');
 
-        $(window).scroll(function() {
-            $('.fixed-action-btn').floatingActionButton('close');
-        });
+  $(window).scroll(function () {
+    $('.fixed-action-btn').floatingActionButton('close');
+  });
 
-        $(document).ready(function() {
-            $('.tooltipped').tooltip();
-        });
+  $(document).ready(function () {
+    $('.tooltipped').tooltip();
+  });
 
-        $(window).load(function() {
-            $('.material-tooltip').css('border-radius', '10px');
-            $('.semEspaco').css('margin-bottom','0');
-        });
-    </script>
+  $(window).load(function () {
+    $('.material-tooltip').css('border-radius', '10px');
+    $('.material-tooltip').css('background-color', 'rgb(47,140,108)');
+    $('.menu').css('background-color', 'rgb(47,140,108)');
+    $('.material-tooltip').css('color', 'white');
+    $('.semEspaco').css('margin-bottom', '0');
+  });
+</script>
 
 </body>
 

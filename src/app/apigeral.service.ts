@@ -6,9 +6,9 @@ import {tap} from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class AniversariosService {
+export class ApigeralService {
 
-  private readonly api = 'http://localhost:666/aniversariantes';
+  private readonly api = 'http://localhost:666/Colaboradores';
 
   constructor(private http: HttpClient) {
   }

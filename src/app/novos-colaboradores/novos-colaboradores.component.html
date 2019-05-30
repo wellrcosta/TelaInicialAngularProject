@@ -1,74 +1,29 @@
-<!-------------------------------DEPOIMENTOS SKA-------------------------------------------->
-<div class="" id="">
-
-  <div class="row semEspaco" style="height:100%; padding:2%; background-color: rgb(0, 164, 255)">
-    <div class="col-sm-7" style="height:100%">
-      <div id="minha-historia-esquerda">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-md-1">
-              <img src="../../assets/img/IconeAniversariantesDaSemana.svg" />
-            </div>
-            <div class="col-md-4">
-              <h3 class="centro">Aniversariantes da Semana</h3>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-4" style="min-height:400px;">
-              <img class="rounded-circle centro" style="width:100%;"
-                   src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA" />
-            </div>
-          </div> <!-- -->
-        </div>
+<!-------------------------------NOVOS COLABORADORES-------------------------------------------->
+<div style="background: linear-gradient(to left, #019394 0%, #67DCD7 100%);padding: 30px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="../../assets/img/IconeNovosColaboradores.svg" style="position: absolute; width: 50px;" alt="">
+        <h4 style="Display: inline; position: absolute; margin-left: 70px; margin-top: 10px;">Novos Colaboradores</h4>
+        <br><br>
+        <h1 style="color: white; text-align: center; margin-top: -40px; font-family: 'Segoe UI',serif">Bem-vindo a nossa
+          equipe!</h1>
       </div>
     </div>
 
-    <div class="col-sm-5" style="height:100%">
+    <div class="row"
+         style="align-items: center; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 
+      <div *ngFor="let take of col" class="col-md-4" style="text-align: center; color: white;">
+        <img class="rounded-circle" style="width:60%;"
+             src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA"
+             alt=""/>
+        <br>
+        <h2>{{take.nm_nome}}</h2>
+        <p>{{take.ds_aniversario}}</p>
 
-      <div class="row" style="height: 30%;">
-        <div class="col-4">
-          <img class="rounded-circle centro" style="width:100%;"
-               src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA" />
-        </div>
-        <div class="col-8">
-          <div class="centro-vertical">
-            <h4> Otávio Fabrin Bubans</h4>
-            <p>Técnico de Lantek<br /> São Leopoldo </p>
-          </div>
-        </div>
       </div>
-
-      <div class="row" style="">
-        <div class="col-4">
-          <img class="rounded-circle centro" style="width:100%;"
-               src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA" />
-        </div>
-        <div class="col-8">
-          <div class="centro-vertical">
-            <h4> Otávio Fabrin Bubans</h4>
-            <p>Técnico de Lantek<br /> São Leopoldo </p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row" style="">
-        <div class="col-4">
-          <img class="rounded-circle centro" style="width:100%;"
-               src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA" />
-        </div>
-        <div class="col-8">
-          <div class="centro-vertical">
-            <h4> Otávio Fabrin Bubans</h4>
-            <p>Técnico de Lantek<br /> São Leopoldo </p>
-          </div>
-        </div>
-      </div>
-
     </div>
-
   </div>
 </div>
+      
