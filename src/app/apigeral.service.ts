@@ -8,7 +8,7 @@ import {tap} from 'rxjs/operators';
 })
 export class ApigeralService {
 
-  private readonly api = 'http://localhost:666/Colaboradores';
+  private readonly api = 'http://10.10.10.138:666/Colaboradores';
 
   constructor(private http: HttpClient) {
   }

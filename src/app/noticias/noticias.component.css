@@ -8,8 +8,22 @@
   font-family: Tahoma, sans-serif;
 }
 
+.col {
+  transition: 0.5s;
+  border-radius: 20px;
+  padding: 15px;
+}
+
 .col:hover {
-  background: #4fc3f7;
+  background: linear-gradient(to left, #019394 0%, #67DCD7 100%)
+}
+
+.azul:hover {
+  background: #7277f7;
+}
+
+.verde:hover {
+  background: #3ef745;
 }
 
 #notes {

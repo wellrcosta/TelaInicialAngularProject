@@ -8,7 +8,7 @@ import {tap} from 'rxjs/operators';
 })
 export class AniversariosService {
 
-  private readonly api = 'http://localhost:666/aniversariantes';
+  private readonly api = 'http://10.10.10.138:666/aniversariantes';
 
   constructor(private http: HttpClient) {
   }
