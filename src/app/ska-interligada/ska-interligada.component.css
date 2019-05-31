@@ -21,9 +21,15 @@
 }
 
 .banner-container li span.overlay {
+  background-repeat: repeat;
+  background-image: url(../../assets/img/bg-overlay.png);
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+span.overlay {
+
 }
