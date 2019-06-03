@@ -24,17 +24,24 @@
     <img src="assets/img/Menu3Pontinhos.svg">
   </a>
   <ul>
-    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="FIRST">
-      <img src="assets/img/Menu%5E.svg">
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="Voltar ao topo">
+      <img src="assets/img/Menu%5E.svg" style="width: 50%; padding-top: 5px">
     </a></li>
-    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="I am a tooltip">
-      <i class="material-icons">3d_rotation</i></a></li>
-    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="I am a tooltip">
-      <i class="material-icons">autorenew</i></a></li>
-    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="I am a tooltip">
-      <i class="material-icons">code</i></a></li>
-    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="I am a tooltip">
-      <i class="material-icons ">bug_report</i></a></li>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="Novidades">
+      <img src="assets/img/MenuNovidades.svg" style="width: 50%; padding-top: 10px">
+    </a></li>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="Aniversariantes">
+      <img src="assets/img/MenuAniversariantes.svg" style="width: 60%; padding-top: 5px">
+    </a></li>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="Novos Colaboradores">
+      <img src="assets/img/MenuBonecoSozinho.svg" style="width: 50%; padding-top: 7px">
+    </a></li>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="SKA Interligada">
+      <img src="assets/img/Menu3Bonecos.svg" style="width: 50%; padding-top: 10px">
+    </a></li>
+    <li><a class="btn-floating tooltipped menu hoverable" data-position="left" data-tooltip="Ir para onde parei">
+      <img src="assets/img/MenuSetinhaEsquerda.svg" style="width: 50%; padding-top: 12px">
+    </a></li>
   </ul>
 </div>
 
@@ -62,44 +69,40 @@
   });
 
   $(window).load(function () {
-    $('.material-tooltip').css('border-radius', '10px');
-    $('.material-tooltip').css('background-color', 'rgb(47,140,108)');
-    $('.menu').css('background-color', 'rgb(47,140,108)');
+    $('.material-tooltip').css('border-radius', '5px');
+    $('.material-tooltip').css('background-color', 'rgb(62,189,135)');
     $('.material-tooltip').css('color', 'white');
     $('.semEspaco').css('margin-bottom', '0');
   });
 
-
-
-  $(window).load(function(){
-    var sum=0;
-    $('.banner-container li img').each(function(){
+  $(window).load(function () {
+    var sum = 0;
+    $('.banner-container li img').each(function () {
       sum += $(this).width();
     });
     $('.banner-container ul').width(sum);
   });
 
-  $(function(){
+  $(function () {
     var winWidth = $(".banner-container").width();
     var ulWidthCount = 0;
     ulWidthCount = $('.banner-container li').size();
-    $(".banner-container li").width(winWidth/ulWidthCount);
-    $(".banner-container li").hover(function(){
+    $(".banner-container li").width(winWidth / ulWidthCount);
+    $(".banner-container li").hover(function () {
       ulWidthCount = $('.banner-container li').size();
       var imgWidth = $(this).find("img").width();
       var bannerLi = winWidth - imgWidth;
       var remWidth = ulWidthCount - 1;
-      var appWidth = bannerLi/remWidth;
-      $(".banner-container li").stop(true, false).animate({width: appWidth},700);
-      $(this).stop(true, false).animate({width: imgWidth},700);
+      var appWidth = bannerLi / remWidth;
+      $(".banner-container li").stop(true, false).animate({width: appWidth}, 700);
+      $(this).stop(true, false).animate({width: imgWidth}, 700);
       $(this).find("span.overlay").stop(true, false).fadeOut();
-    }, function(){
-      $(this).animate({width: winWidth/ulWidthCount},700);
-      $(".banner-container li").animate({width:winWidth/ulWidthCount},700);
+    }, function () {
+      $(this).animate({width: winWidth / ulWidthCount}, 700);
+      $(".banner-container li").animate({width: winWidth / ulWidthCount}, 700);
       $(this).find("span.overlay").fadeIn();
     });
   });
-
 
 </script>
 

@@ -1,7 +1,30 @@
 <!-------------------------------BLOCOS-------------------------------------------->
 
 <div class="infos">
-  <div id="box1"></div>
-  <div id="box2"></div>
-  <div id="box3"></div>
+  <div class="previsaoTempo" id="box1">
+    <img src="../../assets/img/MenuPrevisao.png" style="width: 110px; padding-top: 20px; padding-left: 10px">
+  </div>
+
+  <div class="Dolar" id="box2">
+    <div class="bloco" style="padding-left: 45px; padding-right: auto">
+      <img src="../../assets/img/MenuDolar.svg" style="width: 70px; padding-top: 30px; padding-left: 10px">
+      <div *ngFor="let dist of dolar" style="display: inline-flex; padding-left: 30px; vertical-align: 35px">
+      <span>
+        <b>Dólar</b>
+        <br>
+        {{dist.ds_moeda}} Real brasileiro
+      </span>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://www.calendarr.com/brasil/calendario-2019/">
+    <div class="Indefinido" id="box3">
+      <div class="bloco" style="padding-left: 35px;">
+        <img src="../../assets/img/MenuCalendario.svg" style="width: 70px; padding-top: 30px; padding-left: 10px">
+      </div>
+    </div>
+  </a>
+
+
 </div>
