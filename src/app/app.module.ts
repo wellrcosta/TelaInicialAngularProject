@@ -11,6 +11,8 @@ import { MinhaHistoriaComponent } from './minha-historia/minha-historia.componen
 import { NovosColaboradoresComponent } from './novos-colaboradores/novos-colaboradores.component';
 import { SkaInterligadaComponent } from './ska-interligada/ska-interligada.component';
 import {FooterTargetComponent} from './footer-target/footer-target.component';
+import {TempoComponent} from './blocos/tempo/tempo.component';
+import {DolarComponent} from './blocos/dolar/dolar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import {FooterTargetComponent} from './footer-target/footer-target.component';
     MinhaHistoriaComponent,
     NovosColaboradoresComponent,
     SkaInterligadaComponent,
-    FooterTargetComponent
+    FooterTargetComponent,
+    TempoComponent,
+    DolarComponent
   ],
   imports: [
     BrowserModule,

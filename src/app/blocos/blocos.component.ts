@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {DolarService} from '../dolar.service';
-import {Dolar} from './dolar';
 
 @Component({
   selector: 'app-blocos',
@@ -9,14 +7,11 @@ import {Dolar} from './dolar';
 })
 export class BlocosComponent implements OnInit {
 
-  dolar: Dolar[];
 
-  constructor(private service: DolarService) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.service.list()
-      .subscribe(dados => this.dolar = dados);
   }
 
 }
