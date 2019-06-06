@@ -1,7 +1,7 @@
 export interface Tempo {
-  temp: string;
-  pressure: string;
   humidity: string;
-  temp_min: string;
+  pressure: string;
+  temp: string;
   temp_max: string;
+  temp_min: string;
 }

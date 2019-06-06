@@ -1,6 +1,31 @@
 <div class="previsaoTempo" id="box1">
-  <img src="../../../assets/img/MenuPrevisao.png" style="width: 110px; padding-top: 20px; padding-left: 10px">
-  <span *ngFor="let previsao of tempo">
-      {{previsao.temp}}
+
+  <div *ngIf="tempo" style="position: absolute; padding-left: 20px">
+    <img alt="Icon"
+         src="../../../assets/img/{{tempo.weather[0].icon}}.png" style="width: 90px; padding-top: 15px;">
+  </div>
+
+  <div style="position: absolute; padding-left: 10%; padding-top: 5px">
+  <span *ngIf="tempo">
+    <p style="font-size: 10pt;">
+      {{tempo.name}}
+      <br>
+    <span style="font-size: 24pt">
+      <b><span id="temp"> {{tempo.main.temp}}</span>º C</b>
     </span>
+      <br>
+      <span>
+        Min: <span id="tempMin"> {{tempo.main.temp_min}}</span>       Máx: <span
+        id="tempMax">{{tempo.main.temp_max}}</span>
+      </span>
+    </p>
+  </span>
+  </div>
+  <script>
+    var init = document.getElementById("temp").value;
+    var aux = Math.round(parseInt(init));
+
+
+  </script>
 </div>
+

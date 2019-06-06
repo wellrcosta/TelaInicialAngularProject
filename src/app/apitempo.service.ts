@@ -8,13 +8,13 @@ import {tap} from 'rxjs/operators';
 })
 export class ApitempoService {
 
-  private readonly api = 'http://10.10.10.138:666/Weather';
+  private readonly her = 'http://10.10.10.138:666/Weather';
 
   constructor(private http: HttpClient) {
   }
 
   list() {
-    return this.http.get<Tempo[]>(this.api).pipe(
+    return this.http.get<Tempo[]>(this.her).pipe(
       tap(console.log)
     );
   }

@@ -1,31 +1,9 @@
 .infos {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 15%;
-  margin-top: 1%;
+  margin-top: 20px;
   overflow: visible;
   z-index: 2;
-}
-
-#box1 {
-  display: inline-block;
-  width: 25%;
-  height: 120px;
-  background-color: white;
-  border-radius: 3%;
-  margin-left: 6%;
-  box-shadow: 0px 0px 5px #000;
-}
-
-#box2 {
-  display: inline-block;
-  width: 25%;
-  height: 120px;
-  background-color: white;
-  border-radius: 3%;
-  margin-left: 6%;
-  margin-right: 6%;
-  box-shadow: 0px 0px 5px #000;
 }
 
 #box3 {
@@ -57,33 +35,10 @@
 
 @media only screen and (max-width: 600px) {
   .infos {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 50%;
-    margin-top: -4%;
     overflow: visible;
     z-index: 2;
-  }
-
-  #box1 {
-    display: inline-block;
-    width: 25%;
-    height: 25%;
-    background-color: white;
-    border-radius: 3%;
-    margin-left: 6%;
-    box-shadow: 0px 0px 15px #000;
-  }
-
-  #box2 {
-    display: inline-block;
-    width: 25%;
-    height: 25%;
-    background-color: white;
-    border-radius: 3%;
-    margin-left: 6%;
-    margin-right: 6%;
-    box-shadow: 0px 0px 15px #000;
   }
 
   #box3 {

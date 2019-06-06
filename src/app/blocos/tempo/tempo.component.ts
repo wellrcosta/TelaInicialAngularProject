@@ -10,7 +10,6 @@ import {ApitempoService} from '../../apitempo.service';
 export class TempoComponent implements OnInit {
 
   tempo: Tempo[];
-
   constructor(private service: ApitempoService) {
   }
 
@@ -18,5 +17,4 @@ export class TempoComponent implements OnInit {
     this.service.list()
       .subscribe(dados => this.tempo = dados);
   }
-
 }
