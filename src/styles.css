@@ -5,3 +5,11 @@
 .menu {
   background-color: rgb(47, 140, 108);
 }
+
+.allcontent {
+  width: 100vw;
+}
+
+@media screen and (max-device-width: 900px) {
+
+}

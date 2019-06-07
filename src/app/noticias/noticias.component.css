@@ -1,6 +1,5 @@
 .noticias, .row {
   position: relative;
-  margin-left: 0;
   font-size: 0.9vw;
   font-family: Tahoma, sans-serif;
   align-items: center;
@@ -8,6 +7,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #E8F5E9;
 }
 
 .snape {
@@ -74,4 +74,20 @@
   top: 50%;
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
+}
+
+@media only screen and (max-device-width: 900px) {
+  .snape {
+    width: 130px;
+    height: 180px;
+    box-shadow: 0 0 2px;
+  }
+
+  .tituloPub {
+    margin-top: 4px;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 7pt;
+    text-align: center;
+  }
 }

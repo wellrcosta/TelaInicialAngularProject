@@ -15,8 +15,8 @@
 
       <div *ngFor="let take of col" class="col-md-3" style="text-align: center; color: white; padding: 15px;">
         <img class="rounded-circle" style="width:80%;"
-             src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA"
-             alt=""/>
+             alt="{{take.nm_nome}}"
+             src="{{take.imagem}}"/>
         <br>
         <h3>{{take.nm_nome}}</h3>
         <p>{{take.ds_aniversario}}</p>
