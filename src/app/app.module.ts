@@ -13,6 +13,8 @@ import { SkaInterligadaComponent } from './ska-interligada/ska-interligada.compo
 import {FooterTargetComponent} from './footer-target/footer-target.component';
 import {TempoComponent} from './blocos/tempo/tempo.component';
 import {DolarComponent} from './blocos/dolar/dolar.component';
+import {AniversarioSKAComponent} from './aniversario-ska/aniversario-ska.component';
+import {Aniversarios2Component} from './aniversarios2/aniversarios2.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {DolarComponent} from './blocos/dolar/dolar.component';
     SkaInterligadaComponent,
     FooterTargetComponent,
     TempoComponent,
-    DolarComponent
+    DolarComponent,
+    AniversarioSKAComponent,
+    Aniversarios2Component
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,12 @@
-<div class="snapeBox previsaoTempo" id="box1">
+<div *ngIf="tempo" class="snapeBox previsaoTempo" id="box1">
 
   <div *ngIf="tempo" style="position: absolute; padding-left: 50px">
     <img alt="Icon"
-         src="../../../assets/img/{{tempo.weather[0].icon}}.png" style="height: 105px; padding-top: 15px;">
+         src="../../../assets/img/{{tempo.weather[0].icon}}.png"
+         style="height: 105px; max-width: 120px; padding-top: 15px;">
   </div>
 
-  <div style="position: absolute; padding-left: 180px;">
+  <div style="position: absolute; padding-left: 190px;">
   <span *ngIf="tempo">
     <p style="font-size: 10pt;">
       {{tempo.name}}

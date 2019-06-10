@@ -1,4 +1,4 @@
-export interface Aniversariante{
+export interface Aniversariante {
 fl_sexo: number;
 nm_nome: string;
 fl_tipo: number;

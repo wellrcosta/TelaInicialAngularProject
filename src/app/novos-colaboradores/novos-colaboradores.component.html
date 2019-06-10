@@ -1,5 +1,5 @@
 <!-------------------------------NOVOS COLABORADORES-------------------------------------------->
-<div style="background: linear-gradient(to left, #019394 0%, #67DCD7 100%);padding: 30px;">
+<div *ngIf="col[0]" style="background: linear-gradient(to left, #019394 0%, #67DCD7 100%);padding: 30px;">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -13,13 +13,19 @@
 
     <div class="row" style="align-items: center; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; ">
 
-      <div *ngFor="let take of col" class="col-md-3" style="text-align: center; color: white; padding: 15px;">
-        <img class="rounded-circle" style="width:80%;"
+      <div *ngFor="let take of col" class="snapeVisitCard">
+        <img class="rounded-circle imgCard"
              alt="{{take.nm_nome}}"
              src="{{take.imagem}}"/>
+        <span class="tituloCard">{{take.nm_nome}}</span>
         <br>
-        <h3>{{take.nm_nome}}</h3>
-        <p>{{take.ds_aniversario}}</p>
+        <span class="cargoCard">{{take.ds_cargo}}</span>
+        <br>
+        <span class="filialCard">em SKA {{take.nm_abreviado}}</span>
+        <br>
+        <span class="emailCard">suporte@ska.com.br</span>
+        <br>
+        <span class="foneCard">51 3591 2900</span>
       </div>
 
     </div>

@@ -4,6 +4,49 @@
   /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
 }
 
+.snapeVisitCard {
+  font-family: Segoe-ui-l, sans-serif;
+  background-color: #E8F5E9;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 310px;
+  height: 180px;
+  float: left;
+  border-radius: 1px;
+  box-shadow: 0px 0px 5px white;
+}
+
+.imgCard {
+  display: inline-block;
+  float: right;
+  width: 100px;
+  height: 100px;
+}
+
+.tituloCard {
+  font-weight: bolder;
+  font-size: 13pt;
+}
+
+.cargoCard {
+  font-style: italic;
+}
+
+.filialCard {
+  font-style: italic;
+}
+
+.emailCard {
+  font-style: italic;
+  float: bottom;
+}
+
+.foneCard {
+  font-style: oblique;
+  font-weight: bold;
+}
+
 .centro {
   margin: 0;
   position: relative;

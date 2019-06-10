@@ -4,6 +4,20 @@
   /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
 }
 
+.row {
+  justify-content: center;
+}
+
+.titulos {
+  margin-left: 50px;
+  display: inline;
+  position: absolute;
+}
+
+#alinhar {
+  justify-content: center;
+}
+
 .centro {
   margin: 0;
   position: relative;
