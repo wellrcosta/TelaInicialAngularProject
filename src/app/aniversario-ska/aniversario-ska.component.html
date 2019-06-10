@@ -1,0 +1,26 @@
+<div *ngIf="aniver" class="row" style="background-color: #97d2d5">
+
+
+  <div class="col-md-12" style="margin-top: 20px">
+    <img alt="" src="../../assets/img/IconeMInhaHistóriaSKA.svg"
+         style="position: absolute; width: 50px;  margin-left: 20px">
+    <h4 style="Display: inline; position: absolute; margin-left: 90px; margin-top: 10px;">Aniversário de SKA</h4>
+    <br><br>
+  </div>
+
+  <div class="col-sm-12" style="margin-top: 30px">
+    <div class="row"
+         style="align-items: center; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+
+      <div *ngFor="let ani of aniver" class="col-2" style="text-align: center;">
+        <img class="rounded-circle" src="{{ani.imagem}}"
+             style="width:180px; height: 180px"/>
+        <h4
+          style="margin-top: 15px; color: white; font-size: 14pt;">{{ani.nm_nome}}</h4>
+        <p style="font-size: 10pt">{{ani.ds_aniversario}}<br>{{ani.ds_cargo}}<br>{{ani.nm_filial}}</p>
+        <br>
+      </div>
+
+    </div>
+  </div>
+</div>

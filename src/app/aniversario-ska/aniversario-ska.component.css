@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Segoe-ui-l";
+  src: url(../../assets/font/segoeuil.ttf) format("truetype");
+  /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
+}
+
+.titulos {
+  margin-left: 10px;
+  display: inline;
+  position: absolute;
+}
+
+#alinhar {
+  justify-content: center;
+  margin: 40px;
+}
+
+.centro {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.centro-vertical {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
