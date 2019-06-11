@@ -26,7 +26,33 @@
 
 .sliderr {
   background-image: url('https://pbs.twimg.com/media/DzNUD1qXQAAjUKh.jpg');
-  filter: brightness(40%) grayscale(100%) blur(3px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*  background-color: #ffffff;*/
+  filter: brightness(50%) grayscale(100%) blur(2px);
 }
 
-@media only screen and (max-width: 600px) {}
+.carousel {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+.textoCentral {
+  text-align: center;
+  font-size: 20pt;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.textoCentral:hover {
+  transform: scale(1.4);
+}

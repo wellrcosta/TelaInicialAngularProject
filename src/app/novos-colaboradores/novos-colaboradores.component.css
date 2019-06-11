@@ -24,27 +24,40 @@
   height: 100px;
 }
 
+.snapeVisitCard:hover {
+  transition: transform .8s ease;
+  background-image: linear-gradient(#66dbd6, #089394);
+  color: white;
+  border-radius: 10px;
+  transform: scale(1.15);
+  box-shadow: 0px 0px 8px black;
+}
+
 .tituloCard {
   font-weight: bolder;
-  font-size: 13pt;
+  font-size: 11pt;
 }
 
 .cargoCard {
   font-style: italic;
+  font-size: 9pt;
 }
 
 .filialCard {
   font-style: italic;
+  font-size: 9pt;
 }
 
 .emailCard {
   font-style: italic;
   float: bottom;
+  font-size: 9pt;
 }
 
 .foneCard {
   font-style: oblique;
-  font-weight: bold;
+  font-size: 9pt;
+  /* font-weight: bold;*/
 }
 
 .centro {

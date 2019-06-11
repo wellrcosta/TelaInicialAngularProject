@@ -1,5 +1,5 @@
 <!-------------------------------NOVOS COLABORADORES-------------------------------------------->
-<div *ngIf="col[0]" style="background: linear-gradient(to left, #019394 0%, #67DCD7 100%);padding: 30px;">
+<div *ngIf="col" style="background: linear-gradient(to left, #019394 0%, #67DCD7 100%);padding: 30px;">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -21,11 +21,11 @@
         <br>
         <span class="cargoCard">{{take.ds_cargo}}</span>
         <br>
-        <span class="filialCard">em SKA {{take.nm_abreviado}}</span>
-        <br>
-        <span class="emailCard">suporte@ska.com.br</span>
-        <br>
         <span class="foneCard">51 3591 2900</span>
+        <br>
+        <span class="emailCard">suporte@ska.com.br</span><br>
+        <span class="filialCard">SKA {{take.nm_abreviado}}</span>
+
       </div>
 
     </div>

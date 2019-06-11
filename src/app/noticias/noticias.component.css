@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Segoe-ui-l";
+  src: url(../../assets/font/segoeuil.ttf) format("truetype");
+  /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
+}
+
 .noticias, .row {
   position: relative;
   font-size: 0.9vw;
@@ -7,22 +13,21 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #E8F5E9;
+  background-color: #f4f4f1;
 }
 
 .snape {
   transition: 0.5s;
-  border-radius: 5px;
   padding: 15px;
   float: left;
   width: 220px;
-  height: 220px;
+  height: 250px;
+  /* background-color: white;*/
   margin: 10px;
-  box-shadow: 0 0 5px;
 }
 
 .snape:hover {
-  transition: transform .8s ease;
+  transition: transform .5s ease;
   transform: scale(1.1);
 }
 
@@ -90,4 +95,13 @@
     font-size: 7pt;
     text-align: center;
   }
+}
+
+.titulo {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  width: 100vw;
+  font-family: Segoe-ui-l, sans-serif;
 }

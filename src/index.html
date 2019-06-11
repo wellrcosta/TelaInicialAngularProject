@@ -16,7 +16,8 @@
 <body style="margin: 0; font-family:Segoe-ui-l">
 <div class="allcontent">
 <a class="navigation" style="background-color: rgba(0, 0, 0, 0); position: absolute; z-index: 1; left: 6%; top: 2%; ">
-  <img src="assets/img/LogoTarget.svg" style="width: 150px;"/>
+  <!--<img src="assets/img/LogoTarget.png" style="width: 150px;"/>-->
+  <img src="./assets/img/LogoTarget.svg" style="width: 150px;"/>
 </a>
 
   <div id="btnc" class="fixed-action-btn " style="position: fixed; top: 3%;">
@@ -52,8 +53,12 @@
   $(document).ready(function () {
     $('.carousel').carousel({
       indicators: true,
+      shift: 10,
+      numVisible: 5,
+      padding: 5,
       onCycleTo: function (ele) {
-        var teste = $(ele).index();
+        $('.sliderr').css('background-image', ele.style.backgroundImage);
+        console.log(ele.style.backgroundImage);
       }
     });
   });
