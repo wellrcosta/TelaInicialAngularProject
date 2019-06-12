@@ -1,11 +1,11 @@
 # Home Page of Target
-[x] Images
-[x] Carousel
-[x] Sections
-[x] Requests
-[x] Size for Desktop
-[] Responsive
-[] Requested adjustments
+- [x] Images
+- [x] Carousel
+- [x] Sections
+- [x] Requests
+- [x] Size for Desktop
+- [ ] Responsive
+- [ ] Requested adjustments
 
 
 
