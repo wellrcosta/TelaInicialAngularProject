@@ -7,10 +7,11 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/materialize.min.js"></script>
 </head>
 
 <body style="margin: 0; font-family:Segoe-ui-l,sans-serif">
@@ -59,13 +60,9 @@
       padding: 5,
       onCycleTo: function (ele) {
         $('.sliderr').css('background-image', ele.style.backgroundImage);
-        console.log(ele.style.backgroundImage);
       }
     });
   });
-</script>
-<script>
-
 
   const botao = document.querySelectorAll('.fixed-action-btn');
   M.FloatingActionButton.init(botao, {

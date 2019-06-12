@@ -4,6 +4,69 @@
   /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
 }
 
+.potter {
+  font-family: "Segoe UI Light", cursive;
+  height: 800px;
+  width: 1400px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(6, 16.66666666666667%);
+  grid-template-rows: 120px 120px 120px 120px 120px 120px;
+}
+
+.weasley {
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  grid-row: span 2;
+  overflow: hidden;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weasley.principal {
+  grid-column: span 2;
+  grid-row: span 4;
+  padding: 15px;
+}
+
+.weasley.clima {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.weasley.dolar {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.weasley.events {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.weasleydataGrande {
+  font-size: 10pt;
+}
+
+.weasleydataPequeno {
+  font-size: 8pt;
+}
+
+.weasleytituloGrande {
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.weasleyTituloPequeno {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
 .noticias, .row {
   position: relative;
   font-size: 0.9vw;
@@ -13,6 +76,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #f1f1f1;
 }
 
 .snape {
