@@ -6,21 +6,43 @@
 
 .potter {
   font-family: "Segoe UI Light", cursive;
-  height: 800px;
-  width: 1400px;
+  height: 95vh;
+  max-height: 1024px;
+  width: 1200px;
+  max-width: 1920px;
   border-radius: 5px;
   overflow: hidden;
 
   display: grid;
-  grid-template-columns: repeat(6, 16.66666666666667%);
-  grid-template-rows: 120px 120px 120px 120px 120px 120px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.forecast {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33333333333333%);
+  grid-template-rows: 1fr;
+}
+
+.forecastDays {
+  overflow: hidden;
+  grid-column: span 1;
+  grid-row: 1;
+  padding: 2px;
+}
+
+.forecastDays:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
 }
 
 .weasley {
-  background-color: white;
   padding: 10px;
   margin: 5px;
-  grid-row: span 2;
+  grid-row: span 4;
   overflow: hidden;
   display: block;
   justify-content: center;
@@ -30,23 +52,36 @@
 
 .weasley.principal {
   grid-column: span 2;
-  grid-row: span 4;
+  grid-row: span 8;
   padding: 15px;
 }
 
+.weasley.separated:hover {
+  transform: scale(1.02);
+}
+
 .weasley.clima {
+  background-color: white;
   grid-column: span 2;
-  grid-row: span 2;
+  grid-row: span 4;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #000;
 }
 
 .weasley.dolar {
+  background-color: white;
   grid-column: span 2;
-  grid-row: span 1;
+  grid-row: span 3;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #000;
 }
 
 .weasley.events {
+  background-color: white;
   grid-column: span 2;
-  grid-row: span 3;
+  grid-row: span 5;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #000;
 }
 
 .weasleydataGrande {
