@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {DolarService} from '../../dolar.service';
-import {Dolar} from '../dolar';
+import {Dolar} from './dolar';
 
 @Component({
   selector: 'app-dolar',

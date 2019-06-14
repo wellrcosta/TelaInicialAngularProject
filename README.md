@@ -1,4 +1,13 @@
-# TESTEE
+# Home Page of Target
+- [x] Images
+- [x] Carousel
+- [x] Sections
+- [x] Requests
+- [x] Size for Desktop
+- [ ] Responsive
+- [ ] Requested adjustments
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 

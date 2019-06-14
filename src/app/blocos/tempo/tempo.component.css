@@ -1,7 +1,3 @@
-#box1 {
-  background-color: white;
-}
-
 .snapeBox {
   margin: 15px;
   display: inline-block;
@@ -10,6 +6,174 @@
   float: left;
   border-radius: 5px;
   box-shadow: 0px 0px 5px #000;
+}
+
+@font-face {
+  font-family: "Segoe-ui-l";
+  src: url(../../../assets/font/segoeuil.ttf) format("truetype");
+  /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
+}
+
+.potter {
+  font-family: "Segoe UI Light", cursive;
+  height: 95vh;
+  max-height: 1024px;
+  width: 1200px;
+  max-width: 1920px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.forecast {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33333333333333%);
+  grid-template-rows: 1fr;
+}
+
+.forecastDays {
+  overflow: hidden;
+  grid-column: span 1;
+  grid-row: 1;
+  padding: 2px;
+}
+
+.forecastDays:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.weasley {
+  padding: 10px;
+  margin: 5px;
+  grid-row: span 4;
+  overflow: hidden;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weasley:hover {
+  background-color: #e1e1e1;
+}
+
+.weasley.principal {
+  grid-column: span 2;
+  grid-row: span 8;
+  padding: 15px;
+}
+
+.weasley.separated:hover {
+  transform: scale(1.02);
+}
+
+.weasley.clima {
+  background-color: white;
+  grid-column: span 2;
+  grid-row: span 4;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #000;
+}
+
+.weasley.dolar {
+  background-color: white;
+  grid-column: span 2;
+  grid-row: span 3;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #000;
+}
+
+.weasley.events {
+  background-color: white;
+  grid-column: span 2;
+  grid-row: span 5;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #000;
+}
+
+.weasleydataGrande {
+  font-size: 10pt;
+}
+
+.weasleydataPequeno {
+  font-size: 8pt;
+}
+
+.weasleytituloGrande {
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.weasleyTituloPequeno {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.noticias, .row {
+  position: relative;
+  font-size: 0.9vw;
+  font-family: Tahoma, sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+
+.snape {
+  transition: 0.5s;
+  padding: 15px;
+  float: left;
+  width: 220px;
+  height: 250px;
+  background-color: white;
+  margin: 10px;
+}
+
+.snape:hover {
+  transition: transform .5s ease;
+  transform: scale(1.1);
+}
+
+.imgPub {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.dataPub {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 7pt;
+}
+
+.tituloPub {
+  margin-top: 5px;
+  font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 11pt;
+  text-align: center;
+}
+
+.verde:hover {
+  background: #ffff00;
+  color: #ff0400;
+
+}
+
+#notes {
+  text-align: justify;
+}
+
+#circulo {
+  vertical-align: middle;
 }
 
 .centro {
@@ -29,24 +193,27 @@
   transform: translate(0, -50%);
 }
 
-@media only screen and (max-width: 600px) {
-  .infos {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    margin-top: -4%;
-    overflow: visible;
-    z-index: 2;
+@media only screen and (max-device-width: 900px) {
+  .snape {
+    width: 130px;
+    height: 180px;
+    box-shadow: 0 0 2px;
   }
 
-  #box1 {
-    display: inline-block;
-    width: 25%;
-    height: 25%;
-    background-color: white;
-    border-radius: 3%;
-    margin-left: 6%;
-    box-shadow: 0px 0px 15px #000;
+  .tituloPub {
+    margin-top: 4px;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 7pt;
+    text-align: center;
   }
+}
 
+.titulo {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  width: 100vw;
+  font-family: Segoe-ui-l, sans-serif;
 }
