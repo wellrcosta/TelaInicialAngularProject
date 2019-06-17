@@ -50,18 +50,14 @@
   text-align: center;
 }
 
-.weasley:hover {
-  background-color: #e1e1e1;
+.weasley.news:hover {
+  transform: scale(1.02);
 }
 
 .weasley.principal {
   grid-column: span 2;
   grid-row: span 8;
   padding: 15px;
-}
-
-.weasley.separated:hover {
-  transform: scale(1.02);
 }
 
 .weasley.clima {
@@ -115,7 +111,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
 .snape {
@@ -150,12 +146,6 @@
   font-family: "Segoe UI", sans-serif;
   font-size: 11pt;
   text-align: center;
-}
-
-.verde:hover {
-  background: #ffff00;
-  color: #ff0400;
-
 }
 
 #notes {

@@ -1,4 +1,4 @@
-<div *ngIf="aniver" class="row" style="background-color: #97d2d5">
+<div *ngIf="aniver" class="row" style="background-color: #ffffff">
 
 
   <div class="col-md-12" style="margin-top: 20px">
@@ -10,21 +10,13 @@
 
   <div class="col-sm-12" style="margin-top: 30px">
     <div class="row"
-         style="align-items: center; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+         style="align-items: center; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; padding: 30px">
 
       <div *ngFor="let ani of aniver" class="col-2 aniversariantes" style="text-align: center;">
         <img class="rounded-circle" src="{{ani.imagem}}"
              style="width:180px; height: 180px"/>
         <h4
-          style="margin-top: 15px; color: white; font-size: 14pt;">{{ani.nm_nome}}</h4>
-        <p style="font-size: 10pt">{{ani.ds_aniversario}}<br>{{ani.ds_cargo}}<br>{{ani.nm_filial}}</p>
-        <br>
-      </div>
-      <div *ngFor="let ani of aniver" class="col-2 aniversariantes" style="text-align: center;">
-        <img class="rounded-circle" src="{{ani.imagem}}"
-             style="width:180px; height: 180px"/>
-        <h4
-          style="margin-top: 15px; color: white; font-size: 14pt;">{{ani.nm_nome}}</h4>
+          style="margin-top: 15px; font-weight: bolder; font-size: 14pt;">{{ani.nm_nome}}</h4>
         <p style="font-size: 10pt">{{ani.ds_aniversario}}<br>{{ani.ds_cargo}}<br>{{ani.nm_filial}}</p>
         <br>
       </div>
