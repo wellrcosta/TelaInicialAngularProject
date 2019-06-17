@@ -1,13 +1,13 @@
-<div *ngIf="tempo.forecast[0]" style="margin-top: -35px">
-  <img src="../../assets/img/11d.png"
+<div *ngIf="tempo.forecast[0]" style="margin-top: -40px">
+  <img src="../../assets/img/{{tempo.description}}.{{tempo.currently}}.png"
        style="height: 100px; margin-top: 40px; margin-right: 30px; alignment-baseline: center">
 
   <div style="display: inline-block; text-align: left;">
-    <span style="font-size: 16pt; color: #0071bd; font-weight: bold">Hoje</span>
+    <span style="font-size: 16pt; color: #0071bd; font-weight: bold">{{tempo.description}}</span>
     <br>
-    <span style="font-size: 14pt; color: #0071bd; font-weight: bold"> Agora - {{tempo.temp}}º </span>
+    <span style="font-size: 14pt; color: #0071bd; font-weight: bold">No momento {{tempo.temp}}º</span>
     <br>
-    <span style="font-weight: bolder; font-size: 10pt">SAO LEOPOLDO, RS</span>
+    <span style="font-weight: bolder; font-size: 10pt">{{tempo.city_name | uppercase}}</span>
     <br>
     <span style="font-size: 12pt">Máxima {{tempo.forecast[0].max}}º - Mínima {{tempo.forecast[0].min}}º</span>
   </div>
@@ -17,8 +17,9 @@
 
   <div class="forecastDays" style="margin-top: -5px">
     <span></span><br>
-    <span style="font-weight: bold">QUA 24</span><br>
-    <img src="../../assets/img/50d.png" style="height: 40px; margin-top: 5px; margin-right: 10px">
+    <span style="font-weight: bold">{{tempo.forecast[1].weekday | uppercase}} - {{tempo.forecast[1].date}}</span><br>
+    <img src="../../assets/img/{{tempo.forecast[1].description}}.dia.png"
+         style="height: 40px; margin-top: 5px; margin-right: 10px">
     <div style="display: inline-block; font-size: 11pt; font-weight: bold">
       <span>{{tempo.forecast[1].max}}º</span><br>
       <span>{{tempo.forecast[1].min}}º</span>
@@ -27,8 +28,9 @@
 
   <div class="forecastDays" style="margin-top: -5px">
     <span></span><br>
-    <span style="font-weight: bold">QUI 25</span><br>
-    <img src="../../assets/img/50d.png" style="height: 40px; margin-top: 5px; margin-right: 10px">
+    <span style="font-weight: bold">{{tempo.forecast[2].weekday | uppercase}} - {{tempo.forecast[2].date}}</span><br>
+    <img src="../../assets/img/{{tempo.forecast[2].description}}.dia.png"
+         style="height: 40px; margin-top: 5px; margin-right: 10px">
     <div style="display: inline-block; font-size: 11pt; font-weight: bold">
       <span>{{tempo.forecast[2].max}}º</span><br>
       <span>{{tempo.forecast[2].min}}º</span>
@@ -37,9 +39,10 @@
 
   <div class="forecastDays" style="margin-top: -5px">
     <span></span><br>
-    <span style="font-weight: bold">SEX 26</span><br>
+    <span style="font-weight: bold">{{tempo.forecast[3].weekday | uppercase}} - {{tempo.forecast[3].date}}</span><br>
     <div style="margin-top: -10px">
-      <img src="../../assets/img/50d.png" style="height: 40px; margin-top: 15px; margin-right: 10px">
+      <img src="../../assets/img/{{tempo.forecast[3].description}}.dia.png"
+           style="height: 40px; margin-top: 15px; margin-right: 10px">
       <div style="display: inline-block; font-size: 11pt; font-weight: bold">
         <span>{{tempo.forecast[3].max}}º</span><br>
         <span>{{tempo.forecast[3].min}}º</span>

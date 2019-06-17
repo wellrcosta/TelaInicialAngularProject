@@ -12,7 +12,7 @@
   max-width: 1920px;
   border-radius: 5px;
   overflow: hidden;
-
+  margin-top: -40px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(12, 1fr);

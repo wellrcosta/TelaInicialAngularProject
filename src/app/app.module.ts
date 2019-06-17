@@ -14,6 +14,7 @@ import {TempoComponent} from './blocos/tempo/tempo.component';
 import {DolarComponent} from './blocos/dolar/dolar.component';
 import {AniversarioSKAComponent} from './aniversario-ska/aniversario-ska.component';
 import {Aniversarios2Component} from './aniversarios2/aniversarios2.component';
+import {EventosComponent} from './blocos/eventos/eventos.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {Aniversarios2Component} from './aniversarios2/aniversarios2.component';
     TempoComponent,
     DolarComponent,
     AniversarioSKAComponent,
-    Aniversarios2Component
+    Aniversarios2Component,
+    EventosComponent
   ],
   imports: [
     BrowserModule,

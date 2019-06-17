@@ -1,0 +1,27 @@
+.total {
+  padding-left: 80px;
+  display: block;
+  position: relative;
+}
+
+.areaImg {
+  float: left;
+  width: 70px;
+}
+
+.texto {
+  float: left;
+  color: #0871bd;
+  font-size: 20pt;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.eventos {
+  display: block;
+  margin-top: 50px;
+  border-radius: 10px;
+  height: 80%;
+  background-color: #00a2ff;
+}
