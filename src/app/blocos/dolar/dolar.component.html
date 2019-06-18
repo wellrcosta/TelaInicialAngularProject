@@ -1,19 +1,19 @@
-<div style="padding: 2%; position: absolute">
+<div style="padding: 30px; position: absolute">
   <img align="center" src="../../assets/img/MenuDolar.svg" style="width: 100px;">
   </div>
 <div
-  style="vertical-align: 35px; margin-top: -5px; padding-left: 160px; font-size: 14pt; position: absolute; text-align: left">
+  style="vertical-align: 35px; padding-left: 160px; font-size: 14pt; position: absolute; text-align: left">
       <span *ngIf="dolar">
         <p>
           <b style="color: #0871bd">Dólar Turismo</b>
         <br>
-          {{dolar[0].ds_moeda}} - Real brasileiro
+          <span style="font-weight: bold;">{{dolar[0].ds_moeda}}</span> - Real brasileiro
         </p>
 
         <p>
         <b style="color: #0871bd">Dólar Comercial</b>
         <br>
-          {{dolar[1].ds_moeda}} - Real brasileiro
+          <span style="font-weight: bold;">{{dolar[1].ds_moeda}}</span> - Real brasileiro
         </p>
       </span>
   </div>

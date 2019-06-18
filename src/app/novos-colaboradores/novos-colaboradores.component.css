@@ -11,10 +11,10 @@
   margin: 15px;
   display: inline-block;
   width: 310px;
-  height: 180px;
+  height: 150px;
   float: left;
-  border-radius: 1px;
-  box-shadow: 0px 0px 5px white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px white;
 }
 
 .imgCard {
@@ -26,11 +26,11 @@
 
 .snapeVisitCard:hover {
   transition: transform .8s ease;
-  background-image: linear-gradient(#66dbd6, #089394);
+  background-color: #00a2ff;
   color: white;
-  border-radius: 10px;
+  border-radius: 0;
   transform: scale(1.15);
-  box-shadow: 0px 0px 8px black;
+  box-shadow: 0 0 0 black;
 }
 
 .tituloCard {
