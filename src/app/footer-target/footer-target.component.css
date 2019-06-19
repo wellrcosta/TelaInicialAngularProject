@@ -1,6 +1,10 @@
 .footer-copyright {
-  width: 100vw;
-  height: 300px;
-  background-color: #8c9eff;
+  font-family: Segoe-ui-l, sans-serif;
+  position: relative;
+  margin-top: -180px;
+  width: 100%;
+  height: 70px;
+  background-color: #e1e1e1;
+  color: #3f8ed0;
   text-align: center;
 }

@@ -1,19 +1,23 @@
 <div *ngIf="tempo.forecast[0]" style="display: flex;  justify-content: center; align-items: center; margin-top: 15px;">
-  <div style="display: inline-flex; margin-right: 20px; margin-top: -20px; left: 20px;">
+  <div style="display: inline-flex; margin-right: 20px; left: 18px;">
 
     <img src="../../assets/img/{{tempo.description}}.{{tempo.currently}}.png"
-         style="height: 100px; margin-right: 15px; alignment-baseline: bottom">
+         style="height: 100px; margin-right: 15px; ">
 
   </div>
 
   <div style="display: inline-block; text-align: left;">
-    <span style="float: left; font-size: 40px; color: #0071bd; margin-top: -12px; font-weight: bold">{{tempo.temp}}
+    <div style="display: inline-flex; padding-top: -10px"> <span
+      style="float: left; font-size: 40px; color: #0071bd; margin-top: -18px; font-weight: bold">{{tempo.temp}}
       ºC</span>
-    <div style="font-size: 13px; font-weight: bolder; color: #0071bb;">
-      <span style="padding-left: 10px">Máx {{tempo.forecast[0].max}}º</span>
+    </div>
+
+    <div style="display: inline-block; font-size: 13px; font-weight: bolder; color: #0071bb;">
+      <span style="padding-left: 10px;">Máx {{tempo.forecast[0].max}}º</span>
       <br>
       <span style="padding-left: 10px">Mín {{tempo.forecast[0].min}}º</span>
     </div>
+    <br>
     <span style="font-size: 14px; color: #0071bd; font-weight: bold">{{tempo.description | uppercase}}</span>
     <br>
     <span style="font-weight: bolder; font-size: 12px">EM {{tempo.city_name | uppercase}}</span>

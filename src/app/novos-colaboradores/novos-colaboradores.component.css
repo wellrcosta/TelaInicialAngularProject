@@ -4,6 +4,11 @@
   /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
 }
 
+@font-face {
+  font-family: "Melinda";
+  src: url("../../assets/font/Melinda.otf");
+}
+
 .snapeVisitCard {
   font-family: Segoe-ui-l, sans-serif;
   background-color: #E8F5E9;
@@ -40,6 +45,7 @@
 
 .cargoCard {
   font-style: italic;
+  font-weight: bold;
   font-size: 9pt;
 }
 
