@@ -1,6 +1,6 @@
 <!-------------------------------CODE FOR THE USE OF 2 HEADS OF THE COMPANY-------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
-<div class="geral">
+<div *ngIf="depoimento[0]" class="geral">
   <div class="depoimentos" id="minha-historia" style="padding:20px; background-color: #e1e1e1; margin-top: -25px;">
     <div class="row">
       <div class="col-md-12">
@@ -15,22 +15,20 @@
 
       <div style="display: inline-block; width: 400px; text-align: center;">
         <img alt="SKA" src="../../assets/img/Caminho 192.svg" style="width: 50px">
-        <h3><span style="font-weight: bold; font-size: 40px">1 ano</span></h3>
-        <span style="font-size: 20px;">Entrou em 15/03/2018</span>
+        <h3><span style="font-weight: bold; font-size: 40px">{{depoimento[0].ds_idade}}</span></h3>
+        <span style="font-size: 20px;">{{depoimento[0].dt_admissao}}</span>
       </div>
 
       <div style="display: inline-flex; margin-right: 80px; margin-left: 30px;">
         <img class="rounded-circle"
-             src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA"
-             style="width:300px; height: 300px;"/>
+             src="{{depoimento[0].imagem}}"
+             style="width:350px; height: 350px;"/>
       </div>
 
       <div style="display: inline-block; width: 400px; text-align: center; align-items: center">
-              <span style="font-size: x-large; color: #0ba3ff">Wellington Reis Ferreira</span><br>
-        <span style="font-size: 10pt; font-weight: bold;">Técnico de Lantek</span> <br>
-              <span style="font-size: 11pt;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio
-                  perspiciatis unde in obcaecati aut molestias deserunt eius id odio culpa, non numquam quis ut porro ad
-                  molestiae saepe nulla?
+        <span style="font-size: x-large; color: #0ba3ff">{{depoimento[0].nm_nome}}</span><br>
+        <span style="font-size: 10pt; font-weight: bold;">{{depoimento[0].ds_cargo}}</span> <br>
+        <span style="font-size: 11pt;">{{depoimento[0].ds_depoimento}}
                 </span>
       </div>
 
@@ -42,7 +40,7 @@
 
 <!-------------------------------CODE FOR THE USE OF 2 HEADS OF THE COMPANY-------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------->
-<div *ngIf="false" class="geral">
+<div *ngIf="depoimento[1]" class="geral">
   <div class="depoimentos" id="minha-historia" style="padding:20px; background-color: #e1e1e1; margin-top: -25px;">
     <div class="row">
       <div class="col-md-12">
@@ -54,43 +52,39 @@
 
     <div class="row semEspaco" style="align-content: center">
 
-      <div class="col-5" style="#0b2e13; height: 320px; margin-top: 50px">
+      <div class="col-5" style="height: 320px; margin-top: 50px">
         <div class="row" style="float: left">
           <img class="rounded-circle"
-               src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA"
+               src="{{depoimento[0].imagem}}"
                style="width:250px; height: 250px;  margin-bottom: 30px;"/>
           <div class="col-5" style="display: inline-block; height: 280px;">
             <div class="centro-vertical">
-              <span style="font-size: x-large; color: #0ba3ff">Wellington Reis Ferreira</span><br>
-              <span style="font-size: 10pt;"><b>Técnico de Lantek</b></span> <br>
-              <span style="font-size: 11pt;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio
-                  perspiciatis unde in obcaecati aut molestias deserunt eius id odio culpa, non numquam quis ut porro ad
-                  molestiae saepe nulla?
+              <span style="font-size: x-large; color: #0ba3ff">{{depoimento[0].nm_nome}}</span><br>
+              <span style="font-size: 10pt; font-weight: bold;">{{depoimento[0].ds_cargo}}</span> <br>
+              <span style="font-size: 11pt;">{{depoimento[0].ds_depoimento}}
                 </span><br>
               <img src="../../assets/img/Caminho 192.svg">
-              <h3><span style="font-weight: bold;">1 ano</span></h3>
-              <span style="font-size: 9pt;">Entrou em 15/03/2018</span>
+              <h3><span style="font-weight: bold;">{{depoimento[0].ds_idade}}</span></h3>
+              <span style="font-size: 9pt;">{{depoimento[0].dt_admissao}}</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-5" style="#0b2e13; height: 320px; margin-top: 50px">
+      <div class="col-5" style="height: 320px; margin-top: 50px">
         <div class="row" style="float: left">
           <img class="rounded-circle"
-               src="https://media.licdn.com/dms/image/C4D0BAQG0qOg5DyzwPw/company-logo_200_200/0?e=2159024400&v=beta&t=J5lU5pdHgiSO49iJGlzNHru3vKnH3KM_wD9XkT8XycA"
+               src="{{depoimento[1].imagem}}"
                style="width:250px; height: 250px;  margin-bottom: 30px;"/>
           <div class="col-5" style="display: inline-block; height: 280px;">
             <div class="centro-vertical">
-              <span style="font-size: x-large; color: #0ba3ff">Wellington Reis Ferreira</span><br>
-              <span style="font-size: 10pt; font-weight: bold;">Técnico de Lantek</span> <br>
-              <span style="font-size: 11pt;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio
-                  perspiciatis unde in obcaecati aut molestias deserunt eius id odio culpa, non numquam quis ut porro ad
-                  molestiae saepe nulla?
+              <span style="font-size: x-large; color: #0ba3ff">{{depoimento[1].nm_nome}}</span><br>
+              <span style="font-size: 10pt; font-weight: bold;">{{depoimento[1].ds_cargo}}</span> <br>
+              <span style="font-size: 11pt;">{{depoimento[1].ds_depoimento}}
                 </span><br>
               <img src="../../assets/img/Caminho 192.svg">
-              <h3><span style="font-weight: bold;">1 ano</span></h3>
-              <span style="font-size: 9pt;">Entrou em 15/03/2018</span>
+              <h3><span style="font-weight: bold;">{{depoimento[1].ds_idade}}</span></h3>
+              <span style="font-size: 9pt;">{{depoimento[1].dt_admissao}}</span>
             </div>
           </div>
         </div>

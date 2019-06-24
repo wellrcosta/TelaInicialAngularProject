@@ -19,7 +19,7 @@
   height: 150px;
   float: left;
   border-radius: 10px;
-  box-shadow: 0px 0px 3px white;
+  box-shadow: 0 0 3px white;
 }
 
 .imgCard {
