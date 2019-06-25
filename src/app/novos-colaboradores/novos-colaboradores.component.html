@@ -7,8 +7,7 @@
         <h4 style="Display: inline; position: absolute; margin-left: 70px; margin-top: 10px;">Novos Colaboradores</h4>
         <br><br>
         <p style="font-size: 60px; color: white; text-align: center; margin-top: -40px; font-family: 'Melinda',cursive">
-          Bem-vindo a nossa
-          equipe!</p>
+          Bem-vindo a nossa equipe!</p>
       </div>
     </div>
 
@@ -18,13 +17,13 @@
         <img class="rounded-circle imgCard"
              alt="{{take.nm_nome}}"
              src="{{take.imagem}}"/>
-        <span class="tituloCard">{{take.nm_nome}}</span>
+        <span class="tituloCard">{{take.nm_nome | slice:0:30}}</span>
         <br>
         <span class="cargoCard">{{take.ds_cargo}}</span>
         <br>
-        <span class="foneCard">51 3591 2900</span>
+        <span class="foneCard">{{take.ds_telefone}}</span>
         <br>
-        <span class="emailCard">suporte@ska.com.br</span><br>
+        <span class="emailCard">{{take.ds_email}}</span><br>
         <span class="filialCard">SKA {{take.nm_abreviado}}</span>
 
       </div>
