@@ -34,3 +34,23 @@
   -ms-transform: translate(0,-50%);
   transform: translate(0, -50%);
 }
+
+.depoimentoAlvus {
+  font-size: 11pt;
+}
+
+.imgAlvus {
+  width: 350px;
+  height: 350px;
+}
+
+@media (max-width: 900px) {
+  .depoimentoAlvus {
+    font-size: 6pt;
+  }
+
+  .imgAlvus {
+    width: 250px;
+    height: 250px;
+  }
+}

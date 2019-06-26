@@ -194,3 +194,31 @@
   width: 100vw;
   font-family: Segoe-ui-l, sans-serif;
 }
+
+.sizeEventsAlvus {
+  position: relative;
+  overflow: auto;
+  background-color: #f4f2f2;
+  height: 300px;
+  width: 350px;
+  margin-top: 80px;
+  margin-left: 15px;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+@media (min-width: 901px) and (max-width: 1280px) {
+  .sizeEventsAlvus {
+    width: 290px;
+  }
+}
+
+@media (max-width: 900px) {
+  .potter {
+    display: none;
+  }
+}
+
