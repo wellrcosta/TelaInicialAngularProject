@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Banner} from './banner';
+import {BannerService} from './banner.service';
 
 @Component({
   selector: 'app-slider',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SLIDERComponent implements OnInit {
 
-  constructor() { }
+  banner: Banner[];
+
+  constructor(private service: BannerService) {
+  }
 
   ngOnInit() {
+    this.service.list()
+      .subscribe(dados => this.banner = dados);
   }
 
 }

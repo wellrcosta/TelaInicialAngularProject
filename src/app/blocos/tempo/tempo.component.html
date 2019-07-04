@@ -1,8 +1,8 @@
-<div *ngIf="tempo.forecast[0]" style="display: flex;  justify-content: center; align-items: center; margin-top: 15px;">
+<div style="display: flex;  justify-content: center; align-items: center; margin-top: 15px;">
   <div style="display: inline-flex; margin-right: 20px; left: 18px;">
 
     <img src="../../assets/img/{{tempo.description}}.{{tempo.currently}}.png"
-         style="height: 100px; margin-right: 15px; ">
+         alt="" style="height: 100px; margin-right: 15px; ">
 
   </div>
 
@@ -24,7 +24,7 @@
     <br>
     <span style="font-size: 14px; color: #000000; font-weight: bold"><img height="8px"
                                                                           src="../../../assets/img/iconeUmidade.svg"> {{tempo.humidity}}
-      % | <img height="8px" src="../../../assets/img/iconeWind.png"> {{tempo.wind_speedy}}
+      % | <img alt="" height="8px" src="../../../assets/img/iconeWind.png"> {{tempo.wind_speedy}}
     </span>
   </div>
 </div>
@@ -34,7 +34,7 @@
   <div class="forecastDays" style="margin-top: -7px">
     <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[1].weekday | uppercase}}</span><br>
     <img src="../../assets/img/{{tempo.forecast[1].description}}.dia.png"
-         style="height: 40px; margin-top: 5px; margin-right: 10px">
+         alt="" style="height: 40px; margin-top: 5px; margin-right: 10px">
     <div style="display: inline-block; font-size: 14px; font-weight: bold">
       <span>{{tempo.forecast[1].max}}º</span><br>
       <span>{{tempo.forecast[1].min}}º</span>
@@ -44,7 +44,7 @@
   <div class="forecastDays" style="margin-top: -7px">
     <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[2].weekday | uppercase}}</span><br>
     <img src="../../assets/img/{{tempo.forecast[2].description}}.dia.png"
-         style="height: 40px; margin-top: 5px; margin-right: 10px">
+         alt="" style="height: 40px; margin-top: 5px; margin-right: 10px">
     <div style="display: inline-block; font-size: 14px; font-weight: bold">
       <span>{{tempo.forecast[2].max}}º</span><br>
       <span>{{tempo.forecast[2].min}}º</span>
@@ -55,7 +55,7 @@
     <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[3].weekday | uppercase}}</span><br>
     <div style="margin-top: -10px">
       <img src="../../assets/img/{{tempo.forecast[3].description}}.dia.png"
-           style="height: 40px; margin-top: 15px; margin-right: 10px">
+           alt="" style="height: 40px; margin-top: 15px; margin-right: 10px">
       <div style="display: inline-block; font-size: 14px; font-weight: bold">
         <span>{{tempo.forecast[3].max}}º</span><br>
         <span>{{tempo.forecast[3].min}}º</span>

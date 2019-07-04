@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Tempo} from './blocos/tempo/tempo';
 import {tap} from 'rxjs/operators';
 
@@ -8,13 +8,14 @@ import {tap} from 'rxjs/operators';
 })
 export class ApitempoService {
 
-  private readonly her = 'http://10.10.10.138:666/Weather';
+  private readonly her = 'http://10.10.10.138:666/Weather/SaoLeopoldo';
 
   constructor(private http: HttpClient) {
   }
 
   list() {
-    return this.http.get<Tempo[]>(this.her).pipe(
+    const head = new HttpHeaders().append('accept', 'application/json').append('content-type', 'application/json');
+    return this.http.get<Tempo[]>(this.her, {headers: head}).pipe(
       tap(console.log)
     );
   }
