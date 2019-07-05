@@ -62,7 +62,7 @@
 
 .snapeVisitCard {
   font-family: Segoe-ui-l, sans-serif;
-  background-color: #E8F5E9;
+  background-color: white;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 15px;
@@ -70,10 +70,10 @@
   margin-left: 20px;
   margin-right: 20px;
   display: inline-block;
-  width: 310px;
-  height: 150px;
+  width: 360px;
+  height: 160px;
   float: left;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 0 3px white;
 }
 
@@ -86,37 +86,37 @@
 
 .snapeVisitCard:hover {
   transition: transform .8s ease;
-  background-color: #00a2ff;
-  color: white;
+  background-color: #fbf9ff;
+  color: #000000;
   transform: scale(1.15);
   box-shadow: 0 0 0 black;
 }
 
 .tituloCard {
   font-weight: bolder;
-  font-size: 10.5pt;
+  font-size: 14pt;
 }
 
 .cargoCard {
-  font-style: italic;
+  /*font-style: italic;*/
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 11pt;
 }
 
 .filialCard {
-  font-style: italic;
-  font-size: 9pt;
+  /*font-style: italic;*/
+  font-size: 10pt;
 }
 
 .emailCard {
-  font-style: italic;
+  /*font-style: italic;*/
   float: bottom;
-  font-size: 9pt;
+  font-size: 10pt;
 }
 
 .foneCard {
-  font-style: oblique;
-  font-size: 9pt;
+  /*font-style: oblique;*/
+  font-size: 11pt;
   /* font-weight: bold;*/
 }
 

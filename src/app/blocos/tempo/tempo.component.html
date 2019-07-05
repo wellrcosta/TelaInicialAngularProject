@@ -1,3 +1,4 @@
+<div class="todoConteudo">
 <div style="display: flex;  justify-content: center; align-items: center; margin-top: 15px;">
   <div style="display: inline-flex; margin-right: 20px; left: 18px;">
 
@@ -29,38 +30,39 @@
   </div>
 </div>
 
-<div class="forecast">
+  <div class="forecast">
 
-  <div class="forecastDays" style="margin-top: -7px">
-    <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[1].weekday | uppercase}}</span><br>
-    <img src="../../assets/img/{{tempo.forecast[1].description}}.dia.png"
-         alt="" style="height: 40px; margin-top: 5px; margin-right: 10px">
-    <div style="display: inline-block; font-size: 14px; font-weight: bold">
-      <span>{{tempo.forecast[1].max}}º</span><br>
-      <span>{{tempo.forecast[1].min}}º</span>
-    </div>
-  </div>
-
-  <div class="forecastDays" style="margin-top: -7px">
-    <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[2].weekday | uppercase}}</span><br>
-    <img src="../../assets/img/{{tempo.forecast[2].description}}.dia.png"
-         alt="" style="height: 40px; margin-top: 5px; margin-right: 10px">
-    <div style="display: inline-block; font-size: 14px; font-weight: bold">
-      <span>{{tempo.forecast[2].max}}º</span><br>
-      <span>{{tempo.forecast[2].min}}º</span>
-    </div>
-  </div>
-
-  <div class="forecastDays" style="margin-top: -7px">
-    <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[3].weekday | uppercase}}</span><br>
-    <div style="margin-top: -10px">
-      <img src="../../assets/img/{{tempo.forecast[3].description}}.dia.png"
-           alt="" style="height: 40px; margin-top: 15px; margin-right: 10px">
+    <div class="forecastDays" style="margin-top: -7px">
+      <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[1].weekday | uppercase}}</span><br>
+      <img src="../../assets/img/{{tempo.forecast[1].description}}.dia.png"
+           alt="" style="height: 40px; margin-top: 5px; margin-right: 10px">
       <div style="display: inline-block; font-size: 14px; font-weight: bold">
-        <span>{{tempo.forecast[3].max}}º</span><br>
-        <span>{{tempo.forecast[3].min}}º</span>
+        <span>{{tempo.forecast[1].max}}º</span><br>
+        <span>{{tempo.forecast[1].min}}º</span>
       </div>
     </div>
-  </div>
 
+    <div class="forecastDays" style="margin-top: -7px">
+      <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[2].weekday | uppercase}}</span><br>
+      <img src="../../assets/img/{{tempo.forecast[2].description}}.dia.png"
+           alt="" style="height: 40px; margin-top: 5px; margin-right: 10px">
+      <div style="display: inline-block; font-size: 14px; font-weight: bold">
+        <span>{{tempo.forecast[2].max}}º</span><br>
+        <span>{{tempo.forecast[2].min}}º</span>
+      </div>
+    </div>
+
+    <div class="forecastDays" style="margin-top: -7px">
+      <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[3].weekday | uppercase}}</span><br>
+      <div style="margin-top: -10px">
+        <img src="../../assets/img/{{tempo.forecast[3].description}}.dia.png"
+             alt="" style="height: 40px; margin-top: 15px; margin-right: 10px">
+        <div style="display: inline-block; font-size: 14px; font-weight: bold">
+          <span>{{tempo.forecast[3].max}}º</span><br>
+          <span>{{tempo.forecast[3].min}}º</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
