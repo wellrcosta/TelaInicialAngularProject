@@ -45,6 +45,12 @@
   height: 350px;
 }
 
+@media (max-width: 1440px) and (min-width: 901px) {
+  .depoimentoAlvus {
+    font-size: 9pt;
+  }
+}
+
 @media (max-width: 900px) {
   .depoimentoAlvus {
     font-size: 6pt;

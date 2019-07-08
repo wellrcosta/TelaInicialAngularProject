@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Interligada} from './interligada';
+import {SkainterligadaService} from './skainterligada.service';
 
 @Component({
   selector: 'app-ska-interligada',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkaInterligadaComponent implements OnInit {
 
-  constructor() { }
+  interligada: Interligada[];
+
+  constructor(private service: SkainterligadaService) {
+  }
 
   ngOnInit() {
+    this.service.list()
+      .subscribe(dados => this.interligada = dados);
   }
 
 }
