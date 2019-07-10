@@ -1,14 +1,8 @@
 <svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
   <defs>
-    <style>.cls-1,.cls-2{fill:none;}.cls-2{stroke:#fff;stroke-width:1.5px;}.cls-3{fill:#fff;}</style>
+    <style>.cls-1{fill:#fff;}</style>
   </defs>
-  <title>icones novos</title>
-  <g id="Grupo_1012" data-name="Grupo 1012">
-    <g id="Elipse_191" data-name="Elipse 191">
-      <circle class="cls-1" cx="26" cy="26" r="26"/>
-      <circle class="cls-2" cx="26" cy="26" r="25.25"/>
-    </g>
-  </g>
-  <path class="cls-3"
+  <title>icones novos menu</title>
+  <path class="cls-1"
         d="M31,15.09H21A11.28,11.28,0,0,0,9.78,26.34v0A11.29,11.29,0,0,0,21,37.64h6.86l.07.07,4.73,4.74a.64.64,0,0,0,.89,0h0a.65.65,0,0,0,.2-.46V37.28a11.28,11.28,0,0,0,8.45-10.9v0A11.28,11.28,0,0,0,31,15.09ZM18.84,30.2l-2.52-1.32L13.81,30.2l.48-2.8-2-2L15.06,25l1.26-2.55L17.58,25l2.81.41-2,2Zm9.72,0L26,28.88,23.53,30.2,24,27.4l-2-2L24.79,25,26,22.46,27.3,25l2.81.41-2,2Zm9.24-2.8.48,2.8-2.52-1.32L33.25,30.2l.48-2.8-2-2L34.51,25l1.25-2.55L37,25l2.81.41Z"/>
 </svg>

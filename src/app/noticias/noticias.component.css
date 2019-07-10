@@ -47,8 +47,17 @@
   text-align: center;
 }
 
+.weasley.news {
+  -webkit-filter: grayscale(25%);
+  filter: grayscale(25%);
+  filter: opacity(80%);
+}
+
 .weasley.news:hover {
   transform: scale(1.02);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: opacity(100%);
 }
 
 .weasley.principal {

@@ -1,8 +1,8 @@
 <svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
   <defs>
-    <style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;}.cls-3{stroke:#fff;stroke-width:1.5px;}</style>
+    <style>.cls-1{fill:#fff;}</style>
   </defs>
-  <title>icones novos</title>
+  <title>icones novos menu</title>
   <path class="cls-1"
         d="M26.53,16.64a2.49,2.49,0,0,0,1.8-3.28,17.62,17.62,0,0,0-1.76-3.22,4.09,4.09,0,0,0-.39-.44h-.36c-.19.24-.42.47-.59.73a12.24,12.24,0,0,0-1.62,3.13A2.47,2.47,0,0,0,26.53,16.64Z"/>
   <path class="cls-1"
@@ -12,10 +12,4 @@
         d="M34.49,17.71a4.72,4.72,0,0,0,.64-.1A2.41,2.41,0,0,0,37,14.84a11.77,11.77,0,0,0-2.08-4,.47.47,0,0,0-.77,0,14.08,14.08,0,0,0-2,3.59A2.47,2.47,0,0,0,34.49,17.71Z"/>
   <path class="cls-1"
         d="M17.48,17.69a2.46,2.46,0,0,0,2.42-3.07,13.68,13.68,0,0,0-2-3.72.49.49,0,0,0-.82,0,14,14,0,0,0-2,3.58A2.44,2.44,0,0,0,17.48,17.69Z"/>
-  <g id="Grupo_1012" data-name="Grupo 1012">
-    <g id="Elipse_191" data-name="Elipse 191">
-      <circle class="cls-2" cx="26" cy="26" r="26"/>
-      <circle class="cls-3" cx="26" cy="26" r="25.25"/>
-    </g>
-  </g>
 </svg>
