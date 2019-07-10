@@ -4,7 +4,6 @@ import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {SLIDERComponent} from './slider/slider.component';
 import {NoticiasComponent} from './noticias/noticias.component';
-import {MomentosComponent} from './momentos/momentos.component';
 import {AniversariosComponent} from './aniversarios/aniversarios.component';
 import {MinhaHistoriaComponent} from './minha-historia/minha-historia.component';
 import {NovosColaboradoresComponent} from './novos-colaboradores/novos-colaboradores.component';
@@ -21,7 +20,6 @@ import {EventosComponent} from './blocos/eventos/eventos.component';
     AppComponent,
     SLIDERComponent,
     NoticiasComponent,
-    MomentosComponent,
     AniversariosComponent,
     MinhaHistoriaComponent,
     NovosColaboradoresComponent,

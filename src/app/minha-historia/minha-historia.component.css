@@ -45,6 +45,13 @@
   height: 350px;
 }
 
+.imgAlvus2 {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1440px) and (min-width: 901px) {
   .depoimentoAlvus {
     font-size: 9pt;
@@ -60,5 +67,9 @@
     object-fit: cover;
     width: 250px;
     height: 250px;
+  }
+
+  .imgAlvus2 {
+    display: none;
   }
 }

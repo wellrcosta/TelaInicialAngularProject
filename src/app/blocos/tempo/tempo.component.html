@@ -18,21 +18,18 @@
       <br>
       <span style="padding-left: 10px">Mín {{tempo.forecast[0].min}}º</span>
     </div>
-    <br>
-    <span style="font-size: 14px; color: #0071bd; font-weight: bold">{{tempo.description | uppercase}}</span>
-    <br>
-    <span style="font-weight: bolder; font-size: 12px">EM {{tempo.city_name | uppercase}}</span>
-    <br>
-    <span style="font-size: 14px; color: #000000; font-weight: bold"><img height="8px"
+    <p style="font-size: 14px; color: #0071bd; font-weight: bold; margin: 0;">{{tempo.description | uppercase}}</p>
+    <p style="font-weight: bolder; font-size: 12px; margin: 0;">EM {{tempo.city_name | uppercase}}</p>
+    <p style="font-size: 14px; color: #000000; font-weight: bold; margin: 0;"><img height="8px"
                                                                           src="../../../assets/img/iconeUmidade.svg"> {{tempo.humidity}}
       % | <img alt="" height="8px" src="../../../assets/img/iconeWind.png"> {{tempo.wind_speedy}}
-    </span>
+    </p>
   </div>
 </div>
 
   <div class="forecast">
 
-    <div class="forecastDays" style="margin-top: -7px">
+    <div class="forecastDays" style="margin: 0">
       <span style="font-weight: bold; font-size: 14px">{{tempo.forecast[1].weekday | uppercase}}</span><br>
       <img src="../../assets/img/{{tempo.forecast[1].description}}.dia.png"
            alt="" style="height: 40px; margin-top: 5px; margin-right: 10px">
