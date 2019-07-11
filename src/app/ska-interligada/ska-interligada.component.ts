@@ -5,7 +5,7 @@ import {SkainterligadaService} from './skainterligada.service';
 @Component({
   selector: 'app-ska-interligada',
   templateUrl: './ska-interligada.component.html',
-  styleUrls: ['./ska-interligada.component.css']
+  styleUrls: ['../../assets/css/bootstrap.component.css', './ska-interligada.component.css']
 })
 export class SkaInterligadaComponent implements OnInit {
 
