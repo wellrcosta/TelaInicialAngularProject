@@ -36,3 +36,67 @@
   transition: transform .8s ease;
   transform: scale(1.2);
 }
+
+.AniversarioSKA {
+  Display: inline;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+
+.imgAlvus {
+  width: 180px;
+  height: 180px
+}
+
+.nmAlvus {
+  margin-top: 15px;
+  font-weight: bolder;
+  font-size: 14pt;
+}
+
+.infosAlvus {
+  font-size: 10pt;
+}
+
+@media (max-width: 1280px) and (min-width: 1000px) {
+  .AniversarioSKA {
+    font-size: 20px;
+  }
+
+  .imgAlvus {
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+  }
+
+  .nmAlvus {
+    font-size: 10pt;
+    font-weight: bolder;
+  }
+
+  .infosAlvus {
+    font-size: 7pt;
+  }
+}
+
+@media (max-width: 900px) {
+  .AniversarioSKA {
+    font-size: 20px;
+  }
+
+  .imgAlvus {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+  }
+
+  .nmAlvus {
+    font-size: 9pt;
+    font-weight: bolder;
+  }
+
+  .infosAlvus {
+    font-size: 6pt;
+  }
+}

@@ -1,40 +1,32 @@
 <!-------------------------------ANIVERSARIANTES DA SEMANA-------------------------------------------->
-<div class="row semEspaco " style="height:100%; padding:1%; margin-top: -20px; background-color: #00a2ff">
+<div *ngIf="aniver" class="row semEspaco " id="aniversariantes"
+     style="height:100%; padding:1%; margin-top: -20px; margin-bottom: -20px; background: url(../../assets/img/Baloes.png) ,linear-gradient(to right, #42a7f5, #2d509c); background-repeat: no-repeat, no-repeat; background-position: top 90px left -40px, center; background-size: 23% auto, cover">
 
   <div class="col-sm-6" style="height:100%; top: 1px;">
     <div id="minha-historia-esquerda">
       <div class="container">
         <div class="row">
           <div class="col-md-1">
-            <img src="../../assets/img/IconeAniversariantesDaSemana.svg"/>
+            <img src="../../assets/img/IconeAniversariantesDaSemana.svg" style="margin-left: 10px"/>
           </div>
-          <div class="col-md-6" style="margin-left: 10px">
-            <h3 class="centro">Aniversariantes da Semana</h3>
+          <div class="col-md-6">
+            <h3 class="centro Aniversariantes">Aniversariantes da Semana</h3>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!--------------------------------------------------------------------------------------------------------->
-  <div class="col-sm-12">
-    <div class="row"
-         style="align-items: center; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+  <div style="width: 80vw; margin-left: 15vw">
+    <div class="col-sm-12">
+      <div class="row"
+           style="align-items: center; color: white; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 
-      <div *ngFor="let ani of aniver" class="col-2 aniversariantes" style="text-align: center;">
-        <img class="rounded-circle" src="{{ani.imagem}}"
-             style="width:180px; height: 180px"/>
-        <h4
-          style="margin-top: 15px; color: white; font-size: 14pt;">{{ani.nm_nome}}</h4>
-        <p style="font-size: 10pt">{{ani.ds_aniversario}}<br>{{ani.ds_cargo}}<br>{{ani.nm_filial}}</p>
-        <br>
-      </div>
-      <div *ngFor="let ani of aniver" class="col-2 aniversariantes" style="text-align: center;">
-        <img class="rounded-circle" src="{{ani.imagem}}"
-             style="width:180px; height: 180px"/>
-        <h4
-          style="margin-top: 15px; color: white; font-size: 14pt;">{{ani.nm_nome}}</h4>
-        <p style="font-size: 10pt">{{ani.ds_aniversario}}<br>{{ani.ds_cargo}}<br>{{ani.nm_filial}}</p>
-        <br>
+        <div *ngFor="let ani of aniver" class="col-2 aniversariantes" style="text-align: center; margin: 15px">
+          <img class="rounded-circle imgAlvus" src="{{ani.imagem}}"/>
+          <h4 class="nmAlvus">{{ani.nm_nome}}</h4>
+          <p class="infosAlvus">{{ani.ds_aniversario}}<br>{{ani.ds_cargo}}<br>{{ani.nm_filial}}</p>
+        </div>
       </div>
     </div>
   </div>

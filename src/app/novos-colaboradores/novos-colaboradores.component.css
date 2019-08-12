@@ -4,17 +4,76 @@
   /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
 }
 
+@font-face {
+  font-family: "Melinda";
+  src: url("../../assets/font/Melinda.otf");
+}
+
+.BemVindo {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: -40px;
+  font-family: 'Melinda', cursive
+}
+
+.NovosColaboradores {
+  Display: inline;
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.divBack {
+  background: linear-gradient(to left, #019394 0%, #67DCD7 100%);
+  padding: 30px;
+}
+
+@media (max-width: 1280px) and (max-height: 900px) and (min-width: 1000px) {
+  .BemVindo {
+    font-size: 36px;
+  }
+
+  .NovosColaboradores {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+
+  .divBack {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .BemVindo {
+    display: none;
+  }
+
+  .NovosColaboradores {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+
+  .divBack {
+    padding: 20px;
+  }
+}
+
 .snapeVisitCard {
   font-family: Segoe-ui-l, sans-serif;
-  background-color: #E8F5E9;
-  padding: 20px;
-  margin: 15px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin: 20px;
   display: inline-block;
-  width: 310px;
-  height: 180px;
+  width: 360px;
+  height: 160px;
   float: left;
-  border-radius: 1px;
-  box-shadow: 0px 0px 5px white;
+  border-radius: 20px;
+  box-shadow: 0 0 3px white;
 }
 
 .imgCard {
@@ -26,37 +85,37 @@
 
 .snapeVisitCard:hover {
   transition: transform .8s ease;
-  background-image: linear-gradient(#66dbd6, #089394);
-  color: white;
-  border-radius: 10px;
+  background-color: #fbf9ff;
+  color: #000000;
   transform: scale(1.15);
-  box-shadow: 0px 0px 8px black;
+  box-shadow: 0 0 0 black;
 }
 
 .tituloCard {
   font-weight: bolder;
-  font-size: 11pt;
+  font-size: 14pt;
 }
 
 .cargoCard {
-  font-style: italic;
-  font-size: 9pt;
+  /*font-style: italic;*/
+  font-weight: bold;
+  font-size: 11pt;
 }
 
 .filialCard {
-  font-style: italic;
-  font-size: 9pt;
+  /*font-style: italic;*/
+  font-size: 10pt;
 }
 
 .emailCard {
-  font-style: italic;
+  /*font-style: italic;*/
   float: bottom;
-  font-size: 9pt;
+  font-size: 10pt;
 }
 
 .foneCard {
-  font-style: oblique;
-  font-size: 9pt;
+  /*font-style: oblique;*/
+  font-size: 11pt;
   /* font-weight: bold;*/
 }
 

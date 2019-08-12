@@ -1,0 +1,42 @@
+.total {
+  padding-left: 80px;
+  padding-top: 10px;
+  display: block;
+  position: relative;
+}
+
+.areaImg {
+  float: left;
+  width: 70px;
+}
+
+.texto {
+  float: left;
+  color: #0871bd;
+  font-size: 20pt;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.eventos {
+  display: block;
+  border-radius: 10px;
+  height: 20%;
+  background-color: #00a2ff;
+}
+
+.sizeEventsAlvus {
+  position: relative;
+  overflow: auto;
+  background-color: #f4f2f2;
+  height: 300px;
+  width: 350px;
+  margin-top: 80px;
+  margin-left: 15px;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}

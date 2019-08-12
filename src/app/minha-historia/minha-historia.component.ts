@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {DepoimentoService} from './depoimento.service';
+import {Depoimento} from './depoimento';
 
 @Component({
   selector: 'app-minha-historia',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MinhaHistoriaComponent implements OnInit {
 
-  constructor() { }
+  depoimento: Depoimento[];
+
+  constructor(private service: DepoimentoService) {
+  }
 
   ngOnInit() {
+    this.service.list()
+      .subscribe(dados => this.depoimento = dados);
   }
 
 }

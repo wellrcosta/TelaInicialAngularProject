@@ -7,42 +7,54 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/materialize.min.js"></script>
 </head>
 
 <body style="margin: 0; font-family:Segoe-ui-l,sans-serif">
 <div class="allcontent">
   <a class="navigation"
      style="background-color: rgba(0, 0, 0, 0); position: absolute; z-index: 1; left: 60px; top: 40px; ">
-  <!--<img src="assets/img/LogoTarget.png" style="width: 150px;"/>-->
     <img src="./assets/img/LogoTarget.svg" style="width: 180px;"/>
 </a>
 
-  <div class="fixed-action-btn " id="btnc" style="position: fixed; top: 40px; right: 40px;">
+  <div class="fixed-action-btn " id="btnc" style="position: fixed; top: 40px; right: 40px; height: 50px">
     <a class="btn-floating btn-large tooltipped menu" data-position="left" data-tooltip="Menu"
        style="text-align: center; align-items: center;">
       <img src="assets/img/Menu3Pontinhos.svg">
     </a>
     <ul>
-      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Voltar ao topo">
+      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Voltar ao topo" href="#inicio">
         <img src="assets/img/Menu%5E.svg" style="width: 50%; padding-top: 5px">
       </a></li>
-      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Novidades">
-        <img src="assets/img/MenuNovidades.svg" style="width: 50%; padding-top: 10px">
-      </a></li>
-      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Aniversariantes">
-        <img src="assets/img/MenuAniversariantes.svg" style="width: 60%; padding-top: 7px">
-      </a></li>
-      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Novos Colaboradores">
-        <img src="assets/img/MenuBonecoSozinho.svg" style="width: 50%; padding-top: 8px">
-      </a></li>
-      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="SKA Interligada">
+      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="SKA Interligada"
+             href="#ska-interligada">
         <img src="assets/img/Menu3Bonecos.svg" style="width: 50%; padding-top: 10px">
       </a></li>
-      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Ir para onde parei">
+      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Novos Colaboradores"
+             href="#novos-colaboradores">
+        <img src="assets/img/MenuBonecoSozinho.svg" style="width: 50%; padding-top: 8px">
+      </a></li>
+      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Aniversariantes"
+             href="#aniversariantes">
+        <img src="assets/img/MenuAniversariantes.svg" style="width: 60%; padding-top: 7px">
+      </a></li>
+      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Aniversario SKA"
+             href="#aniversario-ska">
+        <img src="assets/img/iconeAniversarioSKA.svg" style="width: 100%;">
+      </a></li>
+      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Minha História na SKA"
+             href="#minha-historia">
+        <img src="assets/img/iconeMinhaHistoria.svg" style="width: 100%;">
+      </a></li>
+      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Novidades" href="#noticias">
+        <img src="assets/img/MenuNovidades.svg" style="width: 50%; padding-top: 10px">
+      </a></li>
+      <li><a class="btn-floating tooltipped menu" data-position="left" data-tooltip="Ir para onde parei"
+             id="btnContext">
         <img src="assets/img/MenuSetinhaEsquerda.svg" style="width: 50%; padding-top: 12px">
       </a></li>
     </ul>
@@ -59,13 +71,9 @@
       padding: 5,
       onCycleTo: function (ele) {
         $('.sliderr').css('background-image', ele.style.backgroundImage);
-        console.log(ele.style.backgroundImage);
       }
     });
   });
-</script>
-<script>
-
 
   const botao = document.querySelectorAll('.fixed-action-btn');
   M.FloatingActionButton.init(botao, {

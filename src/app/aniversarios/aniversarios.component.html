@@ -34,6 +34,14 @@
         <p style="font-size: 10pt">{{ani.ds_aniversario}}<br>{{ani.ds_cargo}}<br>{{ani.nm_filial}}</p>
         <br>
       </div>
+      <div *ngFor="let ani of aniver" class="col-4" style="text-align: center;">
+        <img class="rounded-circle" src="{{ani.imagem}}"
+             style="width:180px; height: 180px"/>
+        <h4
+          style="margin-top: 15px; color: white; font-size: 14pt;">{{ani.nm_nome}}</h4>
+        <p style="font-size: 10pt">{{ani.ds_aniversario}}<br>{{ani.ds_cargo}}<br>{{ani.nm_filial}}</p>
+        <br>
+      </div>
     </div>
   </div>
 

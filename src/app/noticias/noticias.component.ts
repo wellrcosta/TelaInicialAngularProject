@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Noticias} from './noticias';
+import {NoticiasService} from './noticias.service';
 
 @Component({
   selector: 'app-noticias',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoticiasComponent implements OnInit {
 
-  constructor() { }
+  noticias: Noticias[];
+
+  constructor(private service: NoticiasService) {
+  }
 
   ngOnInit() {
+    this.service.list()
+      .subscribe(dados => this.noticias = dados);
   }
 
 }

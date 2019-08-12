@@ -1,0 +1,22 @@
+<div class="total">
+  <div class="areaImg">
+    <img alt="" src="../../../assets/img/iconeEventos.svg">
+  </div>
+  <div class="texto">
+    Eventos
+  </div>
+</div>
+<div class="sizeEventsAlvus">
+  <ul style="font-size: 13px;">
+
+    <li *ngFor="let dsv of eventos">
+      <button
+        style="border-radius: 20px; background-color: #008c6b; color: white; font-weight: bold; margin-right: 10px; margin-top: 3px;">
+        {{dsv.dt_evento}}
+      </button>
+      <span style="font-weight: bold;">{{dsv.nm_evento}}</span>
+    </li>
+
+  </ul>
+</div>
+

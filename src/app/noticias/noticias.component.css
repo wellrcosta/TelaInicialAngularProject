@@ -4,6 +4,111 @@
   /* src: url(../../minha-historia/font/segoeuil.ttf) format("truetype"); */
 }
 
+.potter {
+  font-family: "Segoe UI Light", cursive;
+  height: 850px;
+  width: 1200px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(24, 1fr);
+
+}
+
+.forecast {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33333333333333%);
+  grid-template-rows: 1fr;
+}
+
+.forecastDays {
+  overflow: hidden;
+  grid-column: span 1;
+  grid-row: 1;
+  padding: 2px;
+}
+
+.forecastDays:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.weasley {
+  margin: 10px;
+  grid-row: span 8;
+  overflow: hidden;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weasley.news {
+  -webkit-filter: grayscale(25%);
+  filter: grayscale(25%);
+  filter: opacity(80%);
+}
+
+.weasley.news:hover {
+  transform: scale(1.02);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: opacity(100%);
+}
+
+.weasley.principal {
+  grid-column: span 2;
+  grid-row: span 16;
+}
+
+.weasley.clima {
+  background-color: white;
+  grid-column: span 2;
+  grid-row: span 7;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #000;
+}
+
+.weasley.dolar {
+  background-color: white;
+  grid-column: span 2;
+  grid-row: span 5;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #000;
+
+}
+
+.weasley.events {
+  background-color: white;
+  grid-column: span 2;
+  grid-row: span 12;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #000;
+}
+
+.weasleydataGrande {
+  font-size: 10pt;
+}
+
+.weasleydataPequeno {
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+.weasleytituloGrande {
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.weasleyTituloPequeno {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
 .noticias, .row {
   position: relative;
   font-size: 0.9vw;
@@ -13,6 +118,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #ffffff;
 }
 
 .snape {
@@ -47,12 +153,6 @@
   font-family: "Segoe UI", sans-serif;
   font-size: 11pt;
   text-align: center;
-}
-
-.verde:hover {
-  background: #ffff00;
-  color: #ff0400;
-
 }
 
 #notes {
@@ -99,8 +199,22 @@
 .titulo {
   display: flex;
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 30px;
   width: 100vw;
   font-family: Segoe-ui-l, sans-serif;
 }
+
+
+@media (min-width: 901px) and (max-width: 1280px) {
+  .sizeEventsAlvus {
+    width: 290px;
+  }
+}
+
+@media (max-width: 900px) {
+  .potter {
+    display: none;
+  }
+}
+

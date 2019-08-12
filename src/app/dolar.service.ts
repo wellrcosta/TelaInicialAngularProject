@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Dolar} from './blocos/dolar';
+import {Dolar} from './blocos/dolar/dolar';
 import {tap} from 'rxjs/operators';
 
 @Injectable({
